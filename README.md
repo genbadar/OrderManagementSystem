@@ -1,6 +1,6 @@
-## Order Management System
+## Order Management System API
 
-This project is a production-style Order Management System developed using ASP.NET Core Web API. It focuses on real-world backend engineering practices rather than basic CRUD operations.
+This project is a production-style Order Management System API developed using ASP.NET Core Web API. It focuses on real-world backend engineering practices rather than basic CRUD operations.
 
 The system handles complete order lifecycle management—from creation to fulfillment—using structured state transitions and background processing. It includes asynchronous job handling, logging, retry mechanisms, and integration-ready architecture.
 

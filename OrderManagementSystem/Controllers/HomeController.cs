@@ -2,11 +2,14 @@
 
 namespace OrderManagementSystem.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult Get()
         {
-            return View();
+            return Ok("Welcome to Order Management System API");
         }
     }
 }
