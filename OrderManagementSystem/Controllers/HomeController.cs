@@ -11,5 +11,11 @@ namespace OrderManagementSystem.Controllers
         {
             return Ok("Welcome to Order Management System API");
         }
+
+        [HttpGet(Name = "GetApiVersion")]
+        public int GetApiVersion()
+        {
+            return 1;
+        }
     }
 }
