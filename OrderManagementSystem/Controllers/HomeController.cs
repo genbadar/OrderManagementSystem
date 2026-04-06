@@ -3,19 +3,21 @@
 namespace OrderManagementSystem.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class HomeController : Controller
     {
+        // GET api/home
         [HttpGet]
         public IActionResult Get()
         {
             return Ok("Welcome to Order Management System API");
         }
 
-        [HttpGet(Name = "GetApiVersion")]
-        public int GetApiVersion()
+        // GET api/home/version
+        [HttpGet("version")]
+        public IActionResult GetApiVersion()
         {
-            return 1;
+            return Ok(1);
         }
     }
 }
